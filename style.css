@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(225, 100%, 98%);
+  overflow: overlay;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+/* ------------------------------------------  */
+
+#main {
+  background-image: url("images/pattern-background-desktop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  height: 785px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card-container {
+  width: 430px;
+  height: 580px;
+  margin: auto;
+}
+
+/* ------------------------------------------  */
+
+.card-image-top {
+  margin: 0px 0px;
+}
+
+/* ------------------------------------------  */
+#card-body {
+  padding: 3rem 3.6rem;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+  font-size: small;
+}
+
+h3 {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 20px;
+}
+
+/* ------------------------------------------  */
+
+#plan {
+  background-color: hsl(225, 100%, 98%);
+  padding: 5px 4px;
+  width: 340px;
+}
+
+#img {
+  width: 95%;
+  height: auto;
+  margin-top: 5px;
+}
+
+#text {
+  margin-top: 5px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+#rate {
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+
+#link {
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  margin-top: 12px;
+}
+
+#link:hover {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+/* ------------------------------------------  */
+
+#buttons {
+  margin-top: 30px;
+  width: 95%;
+  height: 80px;
+  padding: 20px 10px;
+}
+
+#btn-1 {
+  background-color: hsl(245, 75%, 52%);
+  font-size: small;
+  margin-bottom: 15px;
+}
+
+#btn-1:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+
+#btn-2 {
+  color: hsl(224, 23%, 55%);
+  font-size: small;
+}
+
+#btn-2:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+/* -------------------media queries-----------------------  */
+
+@media (min-width: 375px) and (max-width: 670px) {
+  #main {
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+  }
+  #card-container {
+    width: 360px;
+    height: 570px;
+  }
+  #plan {
+    width: 270px;
+    font-size: x-small;
+  }
+}

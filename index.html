@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!-- logo -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- bootstrap stylesheet -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+  </head>
+
+  <body class="m-0 p-0 bg-blue-100 text-base">
+    <main
+      id="main"
+      class="flex flex-col justify-center items-center"
+    >
+      <div
+        id="card-container"
+        class="flex flex-col rounded-2x1 bg-white overflow-hidden"
+      >
+        <img
+          class="card-img-top w-full object-fill m-0 p-0"
+          src="images/illustration-hero.svg"
+          alt="Card image cap"
+        />
+        <div
+          id="card-body"
+          class="justify-center items-center flex flex-col flex-1 text-center"
+        >
+          <h3 class="font-extrabold text-2xl text-blue-400">Order Summary</h3>
+          <p class="card-text">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+
+          <div class="row" id="plan">
+            <div class="col-sm" id="img">
+              <img src="images/icon-music.svg" />
+            </div>
+            <div class="col-sm" id="text">
+              Annual Plan
+              <span id="rate">$59.99/year</span>
+            </div>
+            <div class="col-sm" id="link">
+              <a href="#">Change</a>
+            </div>
+          </div>
+
+          <div class="btn-group-vertical" id="buttons">
+            <button type="button" class="btn btn-primary" id="btn-1">
+              Proceed to Payment
+            </button>
+            <button type="button" class="btn btn-link" id="btn-2">
+              Cancel Order
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
